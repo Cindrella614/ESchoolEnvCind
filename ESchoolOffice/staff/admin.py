@@ -29,7 +29,6 @@ class StaffAdmin(admin.ModelAdmin):
 class TeacherSubjectAdmin(admin.ModelAdmin):
     fields = ['subject_id', 'teacher_id']
 
-
 admin.site.register(Designation, DesignationAdmin)
 admin.site.register(LeaveType, LeaveTypeAdmin)
 admin.site.register(Staff, StaffAdmin)

@@ -61,7 +61,6 @@ class StaffLeave(models.Model):
     leave_id = models.ForeignKey(LeaveType, on_delete=models.RESTRICT)
     leave_status = models.IntegerField(choices=LEAVE_STATUS)
 
-
 class TeacherSubjects(models.Model):
     subject_id = models.ForeignKey(Subject, on_delete=models.RESTRICT)
     teacher_id = models.ForeignKey(Staff, on_delete=models.RESTRICT)
