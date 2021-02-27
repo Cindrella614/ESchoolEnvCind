@@ -34,7 +34,7 @@ class Staff(models.Model):
     staff_email = models.CharField(max_length=100)
     staff_dob = models.DateField()
     staff_doj = models.DateField()
-    staff_status = models.EmailField(max_length=1, choices=STAFF_STATUS, unique=True)
+    staff_status = models.CharField(max_length=1, choices=STAFF_STATUS, unique=True)
     desig_id = models.ForeignKey(Designation, on_delete=models.RESTRICT)
     staff_adharno = models.IntegerField()
     staff_active = models.IntegerField(choices=STAFF_ACTIVE)
